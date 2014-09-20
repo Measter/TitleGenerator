@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1AF23D4C-9371-43A9-80CD-75396CCCF609}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TitleGenerator</RootNamespace>
+    <AssemblyName>TitleGenerator</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CKIIUtils">
+      <HintPath>..\..\CKIIParsers\CKIIParsers\bin\Release\CKIIUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Pdoxcl2Sharp, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Games\Paradox\Pdoxcl2Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CK2Data.cs" />
+    <Compile Include="HistoryState.cs" />
+    <None Include="namedata\1 - 1 - Persian.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\1 - 2 - Turkish.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\1 - 3 - Arabic.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\1 - 4 - Kurdish.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\2 - 1 - Czech.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\2 - 3 - Lithuanian.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\3 - 1 - Scots Gaelic.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\3 - 2 - Manx Gaelic.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\3 - 3 - Irish.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\3 - 4 - Welsh.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\4 - 1 - Finnish.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\4 - 2 - Swedish.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\4 - 3 - Danish.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\4 - 4 - Dutch.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\4 - 6 - Norwegian.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\4 - 7 - English.bin" />
+    <None Include="namedata\5 - 2 - Polish.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\5 - 3 - Estonian.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\5 - 6 - Hungarian.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\5 - 7 - Slovak.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\6 - 1 - Catalan.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\6 - 2 - Portuguese.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\6 - 3 - Romanian.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\6 - 4 - Spanish.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\6 - 6 - French.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\7 - 1 - Greek.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\7 - 2 - Armenian.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\7 - 3 - Alan.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\7 - 4 - Georgian.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\8 - 1 - Dwarf.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\8 - 2 - Elf.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\8 - 3 - Goblin.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="namedata\8 - 4 - Human.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="DataUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataUI.Designer.cs">
+      <DependentUpon>DataUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Includes\ConverterTableReader.cs" />
+    <Compile Include="Includes\DebugBreak.cs" />
+    <Compile Include="Includes\Extensions.cs" />
+    <Compile Include="Includes\FolderSelectDialog.cs" />
+    <Compile Include="Includes\MarkovWordGenerator.cs" />
+    <Compile Include="Includes\Tuple.cs" />
+    <Compile Include="SettingsStore.cs" />
+    <Compile Include="Tasks\CheckTitleTask.cs" />
+    <Compile Include="Tasks\DumpDataTask.cs" />
+    <Compile Include="Tasks\History\ApplyProvinceHistory.cs" />
+    <Compile Include="Tasks\History\CharacterOption.cs" />
+    <Compile Include="Tasks\History\ClearCharactersTask.cs" />
+    <Compile Include="Tasks\History\Clear\ClearDukesTask.cs" />
+    <Compile Include="Tasks\History\Clear\ClearCountsTask.cs" />
+    <Compile Include="Tasks\History\Clear\ClearHistoryShared.cs" />
+    <Compile Include="Tasks\History\CreateHistoryShared.cs" />
+    <Compile Include="Tasks\History\CultureGenerationTask.cs" />
+    <Compile Include="Tasks\History\FullHistoryTask.cs" />
+    <Compile Include="Tasks\History\ResetHistory.cs" />
+    <Compile Include="Tasks\TitleGeneration\NationTableTask.cs" />
+    <Compile Include="Tasks\SharedTask.cs" />
+    <Compile Include="Tasks\History\Clear\ClearKingsTask.cs" />
+    <Compile Include="Tasks\History\Clear\ClearEmperorsTask.cs" />
+    <Compile Include="Tasks\History\Independent\IndependentEmperorsTask.cs" />
+    <Compile Include="Tasks\History\Independent\IndependentKingsTask.cs" />
+    <Compile Include="Tasks\History\Independent\IndependentDukesTask.cs" />
+    <Compile Include="Tasks\History\Independent\IndependentCountsTask.cs" />
+    <Compile Include="Tasks\TitleGeneration\CreateTitleTask.cs" />
+    <Compile Include="Tasks\DeleteModTask.cs" />
+    <Compile Include="Tasks\TitleGeneration\FlagTask.cs" />
+    <Compile Include="Tasks\ITask.cs" />
+    <Compile Include="Tasks\LoadTask.cs" />
+    <Compile Include="ProgressPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressPopup.Designer.cs">
+      <DependentUpon>ProgressPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\TitleGeneration\LocalisationTask.cs" />
+    <Compile Include="Tasks\ModWriteTask.cs" />
+    <Compile Include="Tasks\TaskStatus.cs" />
+    <None Include="app.config" />
+    <Compile Include="HistoryRules\RuleParser.cs" />
+    <Compile Include="Includes\ReadOnlyDictionary.cs" />
+    <Compile Include="Includes\Reflector.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="MiscClasses.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DataUI.resx">
+      <DependentUpon>DataUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressPopup.resx">
+      <DependentUpon>ProgressPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scripts\allows\DefaultAllows.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\gains\DefaultGains.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\rules\GoTRuleSet.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\rules\HIPRuleSet.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\rules\Keep867Republics.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\rules\Keep1066Republics.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\rules\VanillaRuleSet.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

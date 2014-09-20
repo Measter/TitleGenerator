@@ -1,0 +1,213 @@
+﻿# List of file names this script requires.
+required_rules = {
+	VanillaRuleSet
+}
+
+# List of titles to ignore during history creation.
+ignored_titles = {
+	
+	# Republics
+	k_pisa
+	d_pisa
+	c_pisa
+	c_piombino
+	c_arborea
+	c_cagliari
+	
+	k_venice
+	d_venice
+	c_venezia
+	
+	k_genoa
+	d_genoa
+	c_genoa
+	c_nice
+	
+	d_gotland
+	c_gotland
+}
+
+# Gotland holder, af Stenkyrka
+character = {
+	gender = male
+	religion = catholic
+	culture = swedish
+	dynasty = 495
+	id = 100536
+}
+# Gildehusen
+character = {
+	gender = male
+	religion = catholic
+	culture = swedish
+	dynasty = 9519
+	id = 167343
+}
+# Hejnum
+character = {
+	gender = male
+	religion = catholic
+	culture = swedish
+	dynasty = 9518
+	id = 167331
+}
+# Guldsmed
+character = {
+	gender = male
+	religion = catholic
+	culture = swedish
+	dynasty = 9517
+	id = 167316
+}
+# Stråben
+character = {
+	gender = male
+	religion = catholic
+	culture = swedish
+	dynasty = 9520
+	id = 167361
+}
+
+# Genoa holder, Doria
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 13041
+	id = 20314
+}
+# Spinola
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 50
+	id = 91340
+}
+# Grimaldi
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 13016
+	id = 73700
+}
+# Fieschi
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 13028
+	id = 167537
+}
+# Embriaco
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 23107
+	id = 167282
+}
+# Nice holder
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	id = 20315
+}
+
+# Venice holder, Contarini
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 516
+	id = 7800
+}
+# Morosini
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 13070
+	id = 182011
+}
+# Ziana
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 13075
+	id = 182000
+}
+# Dandolo
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 13027
+	id = 170041
+}
+# Faliero
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 514
+	id = 7804
+}
+
+# Pisa holder, della Gherardesca
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 13031
+	id = 180023
+}
+# d'Appiano
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 13026
+	id = 20323
+}
+# Visconti
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 1042014
+	id = 180202
+}
+# Alliata
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 9521
+	id = 167506
+}
+# Caetani
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 622
+	id = 167485
+}
+# Holder of County of Arborea
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	id = 20325
+}
+# Holder of County of Cagliari
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	id = 20326
+}

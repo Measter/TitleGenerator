@@ -1,0 +1,98 @@
+﻿# List of file names this script requires.
+required_rules = {
+	VanillaRuleSet
+}
+
+# List of titles to ignore during history creation.
+ignored_titles = {
+	
+	# Republics
+	k_venice
+	d_venice
+	c_venezia
+
+	d_amalfi
+	c_amalfi
+}
+
+# Amalfi holder, Polkarios
+character = {
+	gender = male
+	religion = catholic
+	culture = greek
+	dynasty = 9591
+	id = 6881
+}
+# Musco
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 9592
+	id = 168436
+}
+# Mauro
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 9594
+	id = 168493
+}
+# Konstantios
+character = {
+	gender = male
+	religion = catholic
+	culture = greek
+	dynasty = 9590
+	id = 168374
+}
+# Urso
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 9593
+	id = 168417
+}
+
+# Venice holder, Participazio
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 1042812
+	id = 184026
+}
+# Orsoleo
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 101562
+	id = 184060
+}
+# Candiano
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 1042813
+	id = 184034
+}
+# Tribuno
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 1042810
+	id = 184053
+}
+# Tradonico
+character = {
+	gender = male
+	religion = catholic
+	culture = italian
+	dynasty = 1042809
+	id = 184074
+}

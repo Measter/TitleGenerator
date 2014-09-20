@@ -1,0 +1,62 @@
+Gain Effect
+
+$IfMakeDeJure
+any_demesne_title = {
+	limit = {
+	$IfIsDuchy
+		tier = COUNT
+	$EndIf
+	$IfIsKingdom
+		tier = DUKE
+	$EndIf
+	$IfIsEmpire
+		tier = KING
+	$EndIf
+		OR = {
+			_title_ = { is_titular = yes }
+			FROM = { has_character_flag = creating_title_loop }
+		}
+	}
+	de_jure_liege = _title_
+	hidden_tooltip = { FROM = {	set_character_flag = creating_title_loop } }
+}
+hidden_tooltip = { clr_character_flag = creating_title_loop }
+$EndIf
+
+Allows:
+
+OR = {
+	FROM = {
+	$IfCulGroup
+		culture_group = _culGroup_
+	$EndIf
+	$IfCul
+		culture = _culture_
+	$EndIf
+	$IfRelGroup
+		religion_group = _relGroup_
+	$EndIf
+	$IfRel
+		OR = {
+			religion = _religion_
+			is_heresy_of = _religion_
+		}
+	$EndIf
+	
+	$IfIsDuchy
+		primary_title = { title = _county_ }
+		num_of_count_titles = _reqCount_
+	$EndIf
+	$IfIsKingdom
+		primary_title = { title = _duchy_ }
+		num_of_duke_titles = _reqDuchy_
+	$EndIf
+	$IfIsEmpire
+		primary_title = { title = _king_ }
+		num_of_king_titles = _reqKing_
+	$EndIf
+	}
+	_title_ = {
+		is_titular = no
+	}
+}

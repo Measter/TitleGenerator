@@ -1,0 +1,10 @@
+﻿# List of file names this script requires.
+required_rules = {
+	VanillaRuleSet
+}
+
+# Misc Options
+misc = {
+	clear_characters = no			# If yes, all existing characters will be cleared.
+	character_start_id = 2000000000	# The ID to start from for generated characters.
+}

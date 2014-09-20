@@ -1,0 +1,256 @@
+﻿# List of titles to ignore during history creation.
+ignored_titles = {
+	d_nightswatch
+	d_the_wall
+	c_castle_black
+	c_shadow_tower
+	c_eastwatch
+	c_brandons_gift
+	c_new_gift
+	
+	c_the_citadel
+	e_iron_throne
+	c_oldtown
+	d_oldtown
+	
+	d_kingsguard
+	b_white_sword_tower
+	
+	k_the_most_devout
+	
+	c_golden_company
+	
+	d_prince_pentos
+	b_princespalace
+	
+	k_volantis
+	
+	d_southstone
+	c_highheart
+	
+	d_blackwood
+	c_blackrush
+	
+	# Wildlings
+	c_frozen_shore
+	c_ice_bay_shore
+	c_shivering_forest
+	c_skirling_pass
+	c_antler_vale
+	c_fot_first_men
+	c_crasters_keep
+	c_whitetree
+	c_haunted_forest
+	c_hardhome
+	c_the_gorge
+	c_n_frostfangs
+	c_c_frostfangs
+	
+	#Unoccupied
+	c_ny_sar
+	c_sar_lhorulys
+	c_ar_noy
+	c_daggerlake
+	c_ar_selrys
+	c_northfields
+	c_lhorulu
+	c_goldenbridge
+	c_nor_salis
+	c_sar_rhoy
+	c_chroyane
+	c_ghoyan_drohe
+	c_sar_mell
+	c_tyvis
+	c_rhoyne_vale
+	c_dalos
+	c_telyria
+	c_anogaria
+	c_bhorash
+	c_ghozai
+	c_velos
+	c_elos
+	c_summerhall
+	c_oldstones
+	c_gogossos
+	c_basiliskpoint
+	c_zamettar
+	c_vyarash
+	c_yeen
+	c_gomorosh
+	c_gorosh
+	c_wyvernpoint
+	c_oldghis
+	c_makhrosh
+	c_nechos
+	c_toqolarth
+	c_qolahn
+}
+
+# Misc Options
+misc = {
+	liege_culture_chance = 60		# The chance that a generated vassal will
+									# the same culture as his liege.
+	liege_religion_chance = 60		# Same, but for religion.
+									# Both are between 0 and 100.
+
+	female_ruler_chance = 30		# Chance out of 100 that a generated ruler
+									# be female.
+	ruler_spouse_chance = 50		# Chance out of 100 that a generated ruler
+									# will have a spouse.
+
+	reps_force_custom_duchies = no	# If true, generated republics will use
+									# be forced to use generated duchies instead
+									# of existing titles.
+	rep_expand_chance = 20			# Chance out of 100 that a republic will spread
+									# to a bordering coastal province.
+	rep_expand_max = 5				# The maximum provinces a republic may have after
+									# expansion.
+									
+	clear_characters = no			# If yes, all existing characters will be cleared.
+	character_start_id = 2000000000	# The ID to start from for generated characters.
+}
+
+# Specific characters to be created.
+# Must specify gender, religion, and culture.
+# Any number of titles can be assigned.
+
+character = {
+	gender = male
+	religion = old_gods
+	culture = ironborn
+	
+	title = c_castle_black
+	title = c_brandons_gift
+	title = d_the_wall
+	title = d_nightswatch	
+	title = c_shadow_tower
+	title = c_eastwatch
+	title = c_new_gift
+}
+
+
+character = {
+	gender = male
+	religion = valyrian
+	culture = high_valyrian
+	
+	title = b_the_citadel
+	title = c_the_citadel
+}
+character = {
+	gender = male
+	religion = valyrian
+	culture = high_valyrian
+	
+	title = b_oldtown
+	title = c_oldtown
+	title = d_oldtown
+}
+character = {
+	gender = male
+	religion = valyrian
+	culture = high_valyrian
+	
+	title = d_kingsguard
+	title = b_white_sword_tower
+}
+
+character = {
+	gender = male
+	religion = rhllor
+	culture = pentosi
+	
+	title = d_prince_pentos
+	title = b_princespalace
+}
+character = {
+	gender = male
+	religion = valyrian
+	culture = eastern_valyrian
+	
+	title = k_volantis
+}
+
+character = {
+	gender = male
+	religion = the_seven
+	culture = riverlander
+	
+	title = d_southstone
+	title = c_highheart
+}
+character = {
+	gender = male
+	religion = old_gods
+	culture = riverlander
+	
+	title = d_blackwood
+	title = c_blackrush
+}
+
+
+# List of succession laws, with restrictions.
+# Supported tags are:
+#	banned_religion_group, allowed_religion_group
+#	banned_religion, allowed_religion
+#	banned_culture_group, allowed_culture_group
+#	banned_culture, allowed_culture
+succession_laws = {
+	succ_gavelkind = {
+	}
+	succ_seniority = {
+	}
+	succ_primogeniture = {
+	}
+	succ_feudal_elective = {
+		allowed_culture_group = celtic
+	}
+	succ_tanistry = {
+		allowed_culture_group = celtic
+	}
+	succ_ultimogeniture = {
+		allowed_culture_group = celtic
+	}
+	succ_turkish_succession = {
+		allowed_culture_group = celtic
+	}
+}
+
+# List of gender laws, with restrictios.
+# Supported tags same as succession.
+gender_laws = {
+	cognatic_succession = {
+	}
+	agnatic_succession = {
+		
+	}
+	true_cognatic_succession = {
+	}
+}
+
+# Levy and taxation weights.
+# These are in order.
+levy_tax_weight = {
+	17 35 11 2
+}
+
+# List of religion groups to use Muslim laws.
+muslim_laws = {
+}
+
+
+# List of cultures or culture groups that can only have male characters generated.
+male_culture = {
+}
+
+# List of cultures or culture groups that can only have female characters generated.
+female_culture = {
+}
+
+# List of religions or religion groups that can only have male characters generated.
+male_religion = {
+}
+
+# List of religions or religion groups that can only have female characters generated.
+female_religion = {
+}

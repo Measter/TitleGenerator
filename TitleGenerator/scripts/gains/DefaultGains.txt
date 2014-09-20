@@ -1,0 +1,37 @@
+﻿		$IfIsKingdom
+		primary_title = { copy_title_laws = __duchy__ }
+		$EndIf
+		$IfIsEmpire
+		primary_title = { copy_title_laws = __kingdom__ }
+		$EndIf
+		
+		$IfMakeDeJure
+		$IfIsKingdom
+		any_demesne_title = {
+			limit = {
+				tier = DUKE
+				OR = {
+					__title__ = { is_titular = yes }
+					FROM = { has_character_flag = creating_title_loop }
+				}
+			}
+			de_jure_liege = __title__
+			hidden_tooltip = { FROM = {	set_character_flag = creating_title_loop } }
+		}
+		hidden_tooltip = { clr_character_flag = creating_title_loop }
+		$EndIf
+		$IfIsEmpire
+		any_demesne_title = {
+			limit = {
+				tier = KING
+				OR = {
+					__title__ = { is_titular = yes }
+					FROM = { has_character_flag = creating_title_loop }
+				}
+			}
+			de_jure_liege = __title__
+			hidden_tooltip = { FROM = {	set_character_flag = creating_title_loop } }
+		}
+		hidden_tooltip = { clr_character_flag = creating_title_loop }
+		$EndIf
+		$EndIf
