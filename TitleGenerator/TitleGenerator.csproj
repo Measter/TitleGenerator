@@ -49,8 +49,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CKIIUtils">
-      <HintPath>..\..\CKIIParsers\CKIIParsers\bin\Release\CKIIUtils.dll</HintPath>
+    <Reference Include="CKIIUtils, Version=2.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CK2Utils\CKIIParsers\bin\Release\CKIIUtils.dll</HintPath>
     </Reference>
     <Reference Include="Pdoxcl2Sharp, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
